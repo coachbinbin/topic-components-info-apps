@@ -11,7 +11,7 @@
           <section>
             <h2>apps组件</h2>
             <div class="container">
-              <nt-apps :src="defaultImg"></nt-apps>
+              <nt-apps :data="appsData"></nt-apps>
             </div>
             <h2>info组件</h2>
             <div class="container">
@@ -23,15 +23,15 @@
             </div>
             <h2>图文列表1组件</h2>
             <div class="container">
-              <nt-info-grid :data="infoData" :src='defaultInfoImg'></nt-info-grid>
+              <nt-info-grid :data="infoData" ></nt-info-grid>
             </div>
             <h2>图文列表2组件</h2>
             <div class="container">
-              <nt-info-swiper :data="infoData" :src='defaultInfoImg'></nt-info-swiper>
+              <nt-info-swiper :data="infoData" ></nt-info-swiper>
             </div>
             <h2>信息列表3组件</h2>
             <div class="container">
-              <nt-info-source :data="infoData" :src='defaultInfoImg'></nt-info-source>
+              <nt-info-source :data="infoData" ></nt-info-source>
             </div>
           </section>
         </main>
@@ -208,7 +208,105 @@ export default {
             "sequence": 10,
             "thumbs": 3
         }
-    ]
+    ],
+    appsData:[
+                        {
+                        "userAuth": false,
+                        "icon": true,
+                        "type": 1,
+                        "homePage": "/top.fencing/appConfig.nsp",
+                        "serialVersionUID": "6806351729328087113",
+                        "pingOK": false,
+                        "alias": "app.top.fencing",
+                        "id": "e47d9ec08936401d84085bf9a4fbd8ff",
+                        "iconUrl": "/com.leadal.saloon.console/theme/images/default.png",
+                        "architecture": 1,
+                        "isIcon": true,
+                        "helpUrl": "",
+                        "broswerPath": "",
+                        "isAdd": true,
+                        "rocketName": "cookies",
+                        "countUrl": "",
+                        "name": "服务反馈",
+                        "requireAuth": false,
+                        "winMode": 1,
+                        "configPage": "",
+                        "categoryId": "927627e5473d48a3a64e4238457e38ed",
+                        "autoFullscreen": true
+                        },
+                        {
+                        "userAuth": false,
+                        "icon": true,
+                        "type": 1,
+                        "homePage": "/kms.topic/",
+                        "categoryName": "系统管理员",
+                        "serialVersionUID": "6806351729328087113",
+                        "pingOK": false,
+                        "alias": "app.saloon.system",
+                        "id": "22a406cfa63149528a4f7f192322f00b",
+                        "iconUrl": "/com.leadal.saloon.console/theme/images/default.png",
+                        "architecture": 1,
+                        "isIcon": true,
+                        "helpUrl": "",
+                        "broswerPath": "",
+                        "isAdd": true,
+                        "rocketName": "cookies",
+                        "countUrl": "",
+                        "name": "专题工具",
+                        "requireAuth": false,
+                        "winMode": 1,
+                        "configPage": "",
+                        "categoryId": "927627e5473d48a3a64e4238457e38ed"
+                        },
+                        {
+                        "userAuth": false,
+                        "icon": true,
+                        "type": 1,
+                        "homePage": "/top.info/catalog/main.nsp",
+                        "categoryName": "系统管理员",
+                        "serialVersionUID": "6806351729328087113",
+                        "pingOK": false,
+                        "alias": "app.saloon.config",
+                        "id": "025331364a104e91897c3729dbce3fb8",
+                        "iconUrl": "/com.leadal.saloon.console/theme/icon/config.png",
+                        "architecture": 1,
+                        "isIcon": true,
+                        "helpUrl": "",
+                        "broswerPath": "",
+                        "isAdd": true,
+                        "rocketName": "cookies",
+                        "countUrl": "",
+                        "name": "栏目信息",
+                        "requireAuth": false,
+                        "winMode": 1,
+                        "configPage": "/saloon.console/config/index.nsp",
+                        "categoryId": "927627e5473d48a3a64e4238457e38ed"
+                        },
+                        {
+                        "userAuth": false,
+                        "icon": true,
+                        "type": 1,
+                        "homePage": "/saloon.console/config/index.nsp",
+                        "categoryName": "系统管理员",
+                        "serialVersionUID": "6806351729328087113",
+                        "pingOK": false,
+                        "alias": "app.saloon.config",
+                        "id": "025331364a104e91897c3729dbce3fb8",
+                        "iconUrl": "/com.leadal.saloon.console/theme/icon/config.png",
+                        "architecture": 1,
+                        "isIcon": true,
+                        "helpUrl": "",
+                        "broswerPath": "",
+                        "isAdd": true,
+                        "rocketName": "cookies",
+                        "countUrl": "",
+                        "name": "门户配置",
+                        "requireAuth": false,
+                        "winMode": 1,
+                        "configPage": "/saloon.console/config/index.nsp",
+                        "categoryId": "927627e5473d48a3a64e4238457e38e1"
+                        }
+                        ],
     }
   },
 

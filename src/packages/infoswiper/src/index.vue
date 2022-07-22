@@ -15,10 +15,7 @@
         v-for="(item, index) in data.slice(0, msgLength)"
         :key="index"
       >
-        <img
-        :src="src"
-          alt="infor img"
-        />
+        <nt-image :src="item.imageResource"></nt-image>
         <div class="swiper-content">
           <p class="swiper-caption">
             <span :class="item.topAble ? 'top-able' : ''">{{

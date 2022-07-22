@@ -1,6 +1,6 @@
 {
   "name": "topic-components-info-apps",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "抽离app组件与信息列表组件",
   "main": "lib/index.js",
   "scripts": {

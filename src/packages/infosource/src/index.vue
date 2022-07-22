@@ -20,10 +20,7 @@
             {{ item.title }}
           </div>
           <div class="item-center">
-            <img
-            :src="src"
-              alt="infor img"
-            />
+            <nt-image :src="item.imageResource"></nt-image>
             <div class="item-detail">
               <div class="item-detail-content">
                 {{ item.summry ? item.summry : "暂无描述" }}
@@ -89,10 +86,7 @@ export default {
       type: String,
       default: 'info',
     },
-    src: {
-        type: String,
-        default: ''
-    },
+    
   },
   data() {
     return {};

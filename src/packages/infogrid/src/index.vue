@@ -12,10 +12,7 @@
       <ul v-if="data[0]">
         <li class="important-msg" @click="viewText(data[0])">
           <div class="important-img">
-            <img
-            :src="src"
-              alt="infor img"
-            />
+            <nt-image :width="'100px'" :height="'70px'" :src="data[0].imageResource"></nt-image>
           </div>
           <div class="important-info">
             <div class="important-title">
@@ -94,10 +91,6 @@ export default {
     showCatalog: {
       type: String,
       default: 'info',
-    },
-    src: {
-        type: String,
-        default: ''
     },
   },
   data() {
