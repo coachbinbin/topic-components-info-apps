@@ -1,0 +1,91 @@
+.diamond-bar {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  /*background: url('/com.leadal.cis.workspace5/image/components/com-box.png') no-repeat;
+        background-size: 100% 100%;*/
+  border: 1px rgba(17, 138, 191, 0.9) solid;
+  box-shadow: 0 0 92px rgb(0, 54, 132) inset;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.diamond-bar-item.imgs-diamonds-tags img {
+  border-radius: 4px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: -moz-linear-gradient(
+      16deg,
+      rgb(255, 255, 255),
+      rgb(162, 162, 162),
+      rgb(255, 255, 255),
+      rgb(162, 162, 162),
+      rgb(255, 255, 255),
+      rgb(162, 162, 162),
+      rgb(255, 255, 255),
+      rgb(162, 162, 162),
+      rgb(255, 255, 255),
+      rgb(162, 162, 162)
+    )
+    1 1 1 1;
+  box-sizing: border-box;
+  width: 91%;
+  height: 144px;
+  cursor: pointer;
+}
+.diamond-bar .diamond-bar-item {
+  display: inline-flex;
+  text-align: center;
+  padding: 16px 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 120px;
+}
+
+.diamond-bar-item > img {
+  border-radius: 4px;
+  border: 1px solid #008ffe;
+  height: 80px;
+  width: 80px;
+}
+
+.diamond-bar-text {
+  line-height: 40px;
+  height: 46px;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 68%;
+}
+.border1.diamond-bar {
+  border-style: solid;
+  border-color: transparent;
+  background-image: url(./assets/border/borde-text1.png), url(./assets/border/borde-text2.png),
+    url(./assets/border/borde-text3.png), url(./assets/border/borde-text7.png), url(./assets/border/borde-text8.png),
+    url(./assets/border/borde-text9.png), url(./assets/border/borde-text4.png), url(./assets/border/borde-text5.png),
+    url(./assets/border/borde-text6.png);
+  background-position: left top, 177px top, right top, left 65px, 180px 65px, right 65px, left bottom, 180px bottom,
+    right bottom;
+  background-size: auto, calc(100% - 177px - 150px) 65px, auto, 180px calc(100% - 65px - 80px),
+    calc(100% - 180px - 150px) calc(100% - 65px - 80px), 150px calc(100% - 65px - 80px), auto,
+    calc(100% - 180px - 150px) 80px, auto;
+  background-repeat: no-repeat;
+  box-shadow: none;
+}
+.app-content-tags {
+  width: 100%;
+  height: calc(100% - 20px);
+  overflow: auto;
+  margin: 10px;
+  padding: 0 20px;
+}

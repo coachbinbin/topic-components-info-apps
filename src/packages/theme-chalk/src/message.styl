@@ -1,0 +1,43 @@
+.nt-message
+  position: fixed
+  display: flex
+  align-items: center
+  padding: 10px 20px
+  border-radius: 6px
+  transition: opacity 0.3s, transform .4s, top 0.4s
+  &.nt-message--success
+    background-color: $--color-success-light-8
+    color: $--color-success
+  &.nt-message--info
+    background-color: $--color-info-light-8
+    color: $--color-info
+  &.nt-message--warning
+    background-color: $--color-warning-light-8
+    color: $--color-warning
+  &.nt-message--error
+    background-color: $--color-error-light-8
+    color: $--color-error
+
+.nt-message__icon
+  margin-right: 5px
+  vertical-align: text-bottom
+
+.nt-message--top
+  left: 50%
+  transform: translateX(-50%)
+
+.nt-message--right
+  top: 100px
+
+.nt-message-slide-fade-top-enter,
+.nt-message-slide-fade-top-leave-active
+  opacity: 0
+  transform: translate(-50%, -100%)
+
+.nt-message-slide-fade-right-enter
+  opacity: 0
+  top: 90%
+  transform: translate(100%, -100%)  
+.nt-message-slide-fade-right-leave-active
+  opacity: 0
+  transform: translate(100%, -100%)
